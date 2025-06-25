@@ -1,0 +1,8 @@
+{
+  "name": "Webcam Storyteller",
+  "description": "An application that uses your webcam to see objects, describes them, and then weaves imaginative fictional stories about them using Gemini AI.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "prompt": ""
+}
