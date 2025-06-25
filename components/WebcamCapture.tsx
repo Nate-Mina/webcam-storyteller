@@ -103,7 +103,6 @@ const WebcamCapture: React.FC<WebcamCaptureProps> = ({
           playsInline 
           muted // Mute to avoid feedback if mic permission was accidentally granted
           className={`w-full h-full object-cover transition-opacity duration-300 ${isWebcamActive ? 'opacity-100' : 'opacity-0'}`}
-          onLoadedData={() => { if(videoRef.current && videoRef.current.readyState >=3) setIsWebcamActive(true);}}
         />
         {!isWebcamActive && (
           <div className="absolute inset-0 flex flex-col items-center justify-center text-slate-400 p-4">
