@@ -9,7 +9,7 @@ if (!API_KEY) {
 
 const ai = new GoogleGenAI({ apiKey: API_KEY || "MISSING_API_KEY" }); // Provide a dummy if missing to avoid constructor error, actual calls will fail.
 
-const TEXT_MODEL_NAME = 'gemini-2.5-flash-preview-04-17'; // For text and vision
+const TEXT_MODEL_NAME = 'gemini-3-flash-preview'; // For text and vision
 
 function getBase64DataAndMimeType(dataUrl: string): { data: string; mimeType: string } {
   const parts = dataUrl.split(',');
